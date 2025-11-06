@@ -234,3 +234,25 @@ Run all backend unit tests and generate a coverage report:
 cd server
 npm install
 npm test
+```
+
+  ---
+
+## Frontend Unit Tests
+
+This project includes **unit tests** for the frontend using **Jest**.  
+
+### Running the Tests
+
+Run all frontend unit tests and generate a coverage report:
+
+```bash
+cd client
+npm install
+npm test
+```
+## 📊 Generate a Coverage Report (if not automatic)
+```
+npm test -- --coverage
+```
+   ---
