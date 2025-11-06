@@ -1,1 +1,4 @@
 /node_modules
+
+# Node coverage reports
+coverage/

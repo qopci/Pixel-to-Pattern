@@ -219,3 +219,18 @@ These steps apply only if you wish to run **Pixel to Pattern** manually without 
   ```bash
   docker exec -it db mysql -u root -p
   ```
+
+  ---
+
+## Backend Unit Tests
+
+This project includes **unit tests** for the backend using **Jest**.  
+
+### Running the Tests
+
+Run all backend unit tests and generate a coverage report:
+
+```bash
+cd server
+npm install
+npm test
