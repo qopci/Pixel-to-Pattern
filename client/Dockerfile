@@ -20,6 +20,9 @@ COPY . .
 # Expose PORT 3001 for frontend server to run on
 EXPOSE 3001
 
+# Temporarily disable Babel to allow Next.js to use SWC during build
+RUN mv babel.config.js babel.config.ignore || true
+
 # Build the Next.js app for production
 RUN npm run build
 

@@ -4,7 +4,7 @@
   "main": "app.js",
   "module": "main.js",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "dev": "nodemon server.js"
   },
   "author": "",
