@@ -251,6 +251,11 @@ cd client
 npm install
 npm test
 ```
+
+cd client
+npm install cypress --save-dev
+
+
 ## 📊 Generate a Coverage Report (if not automatic)
 ```
 npm test -- --coverage
