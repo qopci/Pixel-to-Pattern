@@ -222,18 +222,18 @@ These steps apply only if you wish to run **Pixel to Pattern** manually without 
 
   ---
 
-## Backend Unit Tests
+## Backend Unit Tests & Integration Tests
 
 This project includes **unit tests** for the backend using **Jest**.  
 
 ### Running the Tests
 
-Run all backend unit tests and generate a coverage report:
+Run all backend unit tests and integration tests:
 
 ```bash
 cd server
 npm install
-npm test
+docker compose exec backend npm test
 ```
 
   ---
