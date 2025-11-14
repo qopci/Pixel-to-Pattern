@@ -233,9 +233,8 @@ Run all backend unit tests and integration tests:
 ```bash
 cd server
 npm install
-docker compose exec backend npm test
+docker exec -it backend npm test
 ```
-
   ---
 
 ## Frontend Unit Tests
@@ -251,10 +250,18 @@ cd client
 npm install
 npm test
 ```
+### Running the Cypress Tests
 
+Run all cypress tests inside the client:
+
+```bash
 cd client
+npm install
 npm install cypress --save-dev
-
+```
+#### Run two terminals for Cypress testing:
+- docker compose up --build (Docker Deployment)
+- npx cypress open (Open Cypress UI Window)
 
 ## 📊 Generate a Coverage Report (if not automatic)
 ```
